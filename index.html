@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="pt">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CLINICA DENTARIA +Sorindente</title>
+  <meta name="description"
+    content="CLINICA DENTARIA +Sorindente — Medicina dentária preventiva e estética. Marque já a sua consulta.">
+  <style>
+    :root {
+      --accent: #004fb6;
+      --muted: #6b7280;
+      --bg: #f7f9fb;
+      --card: #ffffff
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial;
+      line-height: 1.5;
+      margin: 0;
+      background: var(--bg);
+      color: #0f172a
+    }
+
+    header {
+      background: linear-gradient(90deg, var(--accent), #1100ff);
+      color: hsl(0, 0%, 100%);
+      padding: 28px 16px
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 20px
+    }
+
+    .brand {
+      display: flex;
+      gap: 12px;
+      align-items: center
+    }
+
+    .brand h1 {
+      font-size: 20px;
+      margin: 0
+    }
+
+    nav {
+      margin-left: auto
+    }
+
+    nav a {
+      color: rgba(255, 255, 255, 0.95);
+      text-decoration: none;
+      margin-left: 16px;
+      font-weight: 600
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      padding: 40px 0
+    }
+
+    .hero .card {
+      background: var(--card);
+      padding: 24px;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(8, 15, 26, 0.06)
+    }
+
+    .hero h2 {
+      margin: 0 0 8px;
+      font-size: 26px
+    }
+
+    .buttons {
+      display: flex;
+      gap: 12px;
+      margin-top: 12px
+    }
+
+    .btn {
+      padding: 10px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      display: inline-block
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #fff
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 2px solid var(--accent);
+      color: var(--accent)
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+      margin-top: 20px
+    }
+
+    .service {
+      background: var(--card);
+      padding: 18px;
+      border-radius: 10px
+    }
+
+    .service h3 {
+      margin: 0 0 8px
+    }
+
+    .about {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      margin-top: 22px
+    }
+
+    .photos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      margin-top: 20px
+    }
+
+    .photos img {
+      width: 100%;
+      border-radius: 12px;
+      object-fit: cover;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08)
+    }
+
+    .contact-card {
+      background: linear-gradient(180deg, #fff, #fbfdff);
+      padding: 18px;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(9, 16, 26, 0.06)
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #e6eef6;
+      border-radius: 8px;
+      margin-top: 8px
+    }
+
+    form button {
+      margin-top: 10px
+    }
+
+    footer {
+      padding: 18px 0;
+      margin-top: 28px;
+      background: transparent;
+      color: var(--muted)
+    }
+
+    @media(min-width:800px) {
+      .hero {
+        grid-template-columns: 1fr 360px;
+        align-items: center
+      }
+
+      .hero .card {
+        padding: 36px
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container" style="display:flex;align-items:center">
+      <div class="brand">
+        <svg width="44" height="44" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+          <rect width="24" height="24" rx="6" fill="white" opacity="0.06" />
+          <path
+            d="M12 3c1.7 0 3.3.7 4.5 1.9 1.2 1.2 1.9 2.8 1.9 4.5 0 2.6-1.4 5.2-4 7.2L12 21l-2.4-4.4C7 16.6 5.6 14 5.6 11.4c0-1.7.7-3.3 1.9-4.5C8.9 3.7 10.5 3 12 3z"
+            fill="white" />
+        </svg>
+        <div>
+          <h1>CLINICA DENTARIA +Sorindente</h1>
+          <div style="font-size:13px;color:rgba(255,255,255,0.9)">Cuidados dentários com conforto e confiança</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#servicos">Serviços</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#galeria">Galeria</a>
+        <a href="Contacto">Contacto </a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="card">
+        <h2>Bem-vindo à CLINICA DENTARIA +Sorindente</h2>
+        <p style="color:var(--muted);margin:0">Profissionais qualificados em medicina dentária preventiva, estética e
+          reabilitação oral. Trate do seu sorriso com tecnologia e carinho.</p>
+        <div class="grid-3" style="margin-top:18px">
+          <div class="service">
+            <h3>Check-up & Profilaxia</h3>
+            <p>Exame completo, limpeza profissional e orientação de higiene oral.</p>
+          </div>
+          <div class="service">
+            <h3>Ortodontia</h3>
+            <p>Aparelhos tradicionais e alinhadores transparentes para todas as idades.</p>
+          </div>
+          <div class="service">
+            <h3>Implantes & Próteses</h3>
+            <p>Soluções duradouras para reposição de dentes com conforto e estética.</p>
+          </div>
+        </div>
+        <div class="buttons">
+          <a class="btn btn-primary" href="#contacto">Marcar Consulta</a>
+          <a class="btn btn-outline" href="#sobre">Saber Mais</a>
+        </div>
+      </div>
+
+      <aside class="contact-card">
+        <h3>Contacte-nos</h3>
+        <p style="margin:4px 0;color:var(--muted)">Telefone: <strong>+258 879041260</strong></p>
+        <p style="margin:4px 0;color:var(--muted)">Email: <strong>Maissorridentesede@gmail.com</strong></p>
+        <p>style="margin:4px 0;color:var(--muted)">instagram: <strong>mais.soriridente_clinic</strong></p>
+        <p style="margin:4px 0;color:var(--muted)">Horário: Seg–Sáb 08:00–17:00</p>
+        <a class="btn btn-primary" href="#contacto">Enviar Mensagem</a>
+      </aside>
+    </section>
+
+    <section id="sobre" class="about">
+      <div style="display:grid;grid-template-columns:1fr;gap:18px">
+        <div class="card">
+          <h2>Sobre a nossa clínica</h2>
+          <p style="color:var(--muted)">A Clínica +Sorindente combina experiência clínica com tecnologias modernas para
+            oferecer tratamentos personalizados. A nossa equipa garante que cada paciente recebe um plano de tratamento
+            claro e seguro.</p>
+        </div>
+
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px">
+          <div class="card">
+            <h3>Equipe</h3>
+            <p style="color:var(--muted)">Dentistas qualificados, higienistas e equipa de apoio com foco no conforto do
+              paciente.</p>
+          </div>
+          <div class="card">
+            <h3>Tecnologia</h3>
+            <p style="color:var(--muted)">Radiografia digital, scanners intraorais e materiais biocompatíveis.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeria" style="margin-top:22px">
+      <h2>Galeria</h2>
+      <p style="color:var(--muted)">Veja um pouco do ambiente da nossa clínica e sorrisos felizes dos nossos pacientes.
+      </p>
+      <div class="photos">
+        <img src="WhatsApp Image 2025-11-03 at 10.53.36_4cba3847.jpg" alt="Foto da clínica dentária" loading="lazy">
+        <img src="WhatsApp Image 2025-11-15 at 20.47.36_c1906a0f.jpg" alt="Sorriso de paciente satisfeito"
+        
+          loading="lazy">
+      </div>
+    </section>
+
+    <section id="servicos" style="margin-top:18px">
+      <h2>Serviços</h2>
+      <div class="grid-3">
+        <div class="service">
+          <h3>Estética Dentária</h3>
+          <p>Facetas, branqueamento e remodelação do sorriso.</p>
+        </div>
+        <div class="service">
+          <h3>Endodontia</h3>
+          <p>Tratamento de canais com técnicas modernas.</p>
+        </div>
+        <div class="service">
+          <h3>Periodontia</h3>
+          <p>Tratamento das gengivas e suporte à saúde oral.</p>
+        </div>
+        <div class="service">
+          <h3>Pediatria</h3>
+          <p>Cuidados especiais para os mais jovens.</p>
+        </div>
+        <div class="service">
+          <h3>Urgências</h3>
+          <p>Atendimento para dor, trauma e infeções.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" style="margin-top:22px;display:grid;grid-template-columns:1fr;gap:18px">
+      <h2>Contacto & Localização</h2>
+      <div style="display:grid;grid-template-columns:1fr;gap:18px">
+        <div class="contact-card">
+          <form id="contactForm" onsubmit="return submitForm(event)">
+            <label>Nome</label>
+            <input id="nome" type="text" placeholder="Seu nome" required>
+            <label>Telefone ou Email</label>
+            <input id="contato" type="text" placeholder="Telefone ou email" required>
+            <label>Mensagem</label>
+            <textarea id="mensagem" rows="4" placeholder="Descreva o motivo do contacto" required></textarea>
+            <button class="btn btn-primary" type="submit">Enviar Mensagem</button>
+            <p id="formStatus" style="margin-top:8px;color:var(--muted)"></p>
+          </form>
+        </div>
+
+        <div class="card">
+          <h3>Onde estamos</h3>
+          <p style="color:var(--muted)">No.905, Av. dos Mártires da Machava, Maputo</p>
+          <div
+            style="width:100%;height:220px;background:#eef7ff;border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--muted)">
+            Mapa ( <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d379.03423705317127!2d32.52431609512106!3d-25.94471337783994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ee697ab69814d6f%3A0x829af5f63b929517!2sAv.%20dos%20M%C3%A1rtires%20da%20Machava%20905%2C%20Maputo!5e0!3m2!1spt-PT!2smz!4v1731714976837!5m2!1spt-PT!2smz"
+    width="100%" 
+    height="350" 
+    style="border:0;border-radius:10px;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</section>)</div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap">
+        <div style="font-size:14px;color:var(--muted)">© <span id="ano"></span> CLINICA DENTARIA +Sorindente — Todos os
+          direitos reservados</div>
+        <div style="font-size:14px;color:var(--muted)">Telefone: +258 879041260</div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('ano').textContent = new Date().getFullYear();
+    function submitForm(e) {
+      e.preventDefault();
+      const status = document.getElementById('formStatus');
+      status.textContent = 'Mensagem enviada. Em breve entraremos em contacto.';
+      document.getElementById('contactForm').reset();
+      return false;
+    }
+  </script>
+</body>
+
+</html>
